@@ -32,7 +32,9 @@ jobs:
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
-          args: use dev && deploy --only hosting
+          args: |
+            use dev
+            firebase deploy
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
 
