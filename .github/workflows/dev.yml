@@ -29,7 +29,16 @@ jobs:
         run: npm run build
 
       # Runs a single command using the runners shell
-      - name: Firebase Deploy
-        run: |
-          firebase use dev --token ${{ secrets.FIREBASE_TOKEN }}
-          firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
+      name: Deploy to Firebase
+        uses: w9jds/firebase-action@master
+        with:
+          args: |
+            use dev
+            deploy
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+
+      #- name: Firebase Deploy
+      #  run: |
+      #    firebase use dev --token ${{ secrets.FIREBASE_TOKEN }}
+      #    firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
