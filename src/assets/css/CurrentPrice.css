@@ -1,0 +1,21 @@
+.btn-gradient-radius {
+  font-weight: 800;
+  display: block;
+  padding: 7px 20px;
+  border-radius: 25px;
+  width: 180px;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FFF;
+  background-color: #e7640d;
+  transition: .4s;
+  letter-spacing: 0.2rem;
+}
+
+.btn-gradient-radius:hover {
+  color: #FFF;
+  background-color: #df905b;
+}

@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "prod": "prod-smapraai-users",
+    "dev": "dev-smapraai-users"
+  }
+}

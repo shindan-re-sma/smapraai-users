@@ -1,0 +1,89 @@
+a {
+  color: inherit !important;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+a:hover {
+  background-color: #b9ceeaa1;
+}
+
+.item-container {
+  border-top: solid #00000047 1px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 20px 0px 20px 30px;
+}
+
+.shop-info {
+  flex: 1;
+  color: #333;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.shop-info > p {
+  margin: 10px 0px 0px 0px;
+  font-size: 18px;
+}
+
+.shop-info > .purcase-type {
+  color: gray;
+}
+
+.price-info {
+  display: flex;
+  flex: 2;
+  flex-flow: column;
+}
+
+.recent-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.recent-price > p {
+  color: red;
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.recent-price > p > span {
+  color: black;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.from-to {
+  color: black;
+  margin: 0px 50px 0px 50px;
+  font-size: 28px;
+}
+
+.arrow-icon {
+  margin: auto;
+}
+
+@media screen and (max-width: 479px) {
+  /*ウィンドウ幅が最大479pxまでの場合に適用*/
+  .item-container > a {
+    flex-flow: column;
+    padding: 20px 0px;
+  }
+
+  .arrow-icon {
+    visibility: hidden;
+  }
+
+  #purchase-option > button {
+    width: 75px;
+  }
+}

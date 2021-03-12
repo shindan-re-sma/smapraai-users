@@ -1,0 +1,15 @@
+.ui.table thead th {
+  background-color: #f6e6cb;
+}
+
+.ui.label {
+  background-color: #f3cfcb;
+}
+
+tr:nth-child(2n){
+  background-color:#ece5da;
+}
+
+.ui.pink.label {
+  display: block;
+}
