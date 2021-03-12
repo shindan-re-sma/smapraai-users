@@ -10,11 +10,11 @@ import SelectButtons from "../components/SelectButtons";
 import SingleButton from "../components/SingleButton";
 import Radio from "../components/Radio";
 import ShopList from "../components/ShopList";
-import LineChart from "../components/LineChart";
+//import LineChart from "../components/LineChart";
 
 //redux
 import { setConditionsActions } from "../reducks/conditions/";
-import initialState from "../reducks/store/initialState";
+//import initialState from "../reducks/store/initialState";
 
 //file
 import purchaseOptions from "../assets/files/purchaseOptions";
@@ -26,15 +26,15 @@ import seriesOptions from "../assets/files/seriesOptions";
 import simOptions from "../assets/files/simOptions";
 import "../assets/css/Assesment.css";
 
-const initialGraphData = {
-  labels: [],
-  data: [{ data_type: "", values: [] }],
-};
+// const initialGraphData = {
+//   labels: [],
+//   data: [{ data_type: "", values: [] }],
+// };
 
 const Assesment = () => {
   //Component State
   const [shopList, setShopList] = useState({});
-  const [graphData, setGraphData] = useState(initialGraphData);
+  //const [graphData, setGraphData] = useState(initialGraphData);
 
   //store
   const dispatch = useDispatch();
@@ -98,7 +98,7 @@ const Assesment = () => {
             value={conditions.series}
             onChange={(e) => {
               dispatch(setConditionsActions({ ...conditions, series: "iPhone" }));
-              setGraphData(initialGraphData);
+              //setGraphData(initialGraphData);
             }}
           />
           <DropdownList

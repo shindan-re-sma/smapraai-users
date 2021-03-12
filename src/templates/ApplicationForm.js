@@ -5,7 +5,7 @@ import axios from "axios";
 import { push } from "connected-react-router";
 import { db, FirebaseTimestamp } from "./../firebase";
 
-import LineChart from "../components/LineChart";
+//import LineChart from "../components/LineChart";
 
 import introduction from "../assets/imgs/introduction.png";
 import smartphone from "../assets/imgs/smartphone.jpg";
@@ -14,10 +14,10 @@ import * as utils from "./../utils/constants";
 
 import "../assets/css/ApplicationForm.css";
 
-const initialGraphData = {
-  labels: [],
-  data: [{ data_type: "", values: [] }],
-};
+// const initialGraphData = {
+//   labels: [],
+//   data: [{ data_type: "", values: [] }],
+// };
 
 const ApplicationForm = () => {
   //申込者情報
@@ -29,7 +29,7 @@ const ApplicationForm = () => {
   const [address, setAddress] = useState("");
   const [message, setMessage] = useState("");
   const [agreement, setAgreement] = useState(false);
-  const [graphData, setGraphData] = useState(initialGraphData);
+  //const [graphData, setGraphData] = useState(initialGraphData);
 
   //機種情報
   const dispatch = useDispatch();

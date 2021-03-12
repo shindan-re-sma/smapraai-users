@@ -29,7 +29,7 @@ const ShopItem = (props) => {
 
   return (
     <div className="item-container">
-      <a className="item" onClick={onClickItem}>
+      <div className="item" onClick={onClickItem}>
         <div className="shop-info">
           {props.name}
           <p className="purcase-type">{props.shopLabel}</p>
@@ -51,7 +51,7 @@ const ShopItem = (props) => {
         <div className="arrow-icon">
           <i className="grey large chevron right link icon"></i>
         </div>
-      </a>
+      </div>
     </div>
   );
 };

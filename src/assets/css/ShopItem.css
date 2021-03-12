@@ -5,10 +5,6 @@ a {
   width: 100%;
 }
 
-a:hover {
-  background-color: #b9ceeaa1;
-}
-
 .item-container {
   border-top: solid #00000047 1px;
 }
@@ -17,6 +13,10 @@ a:hover {
   display: flex;
   align-items: center;
   padding: 20px 0px 20px 30px;
+}
+
+.item:hover {
+  background-color: #b9ceeaa1;
 }
 
 .shop-info {
@@ -74,7 +74,7 @@ a:hover {
 
 @media screen and (max-width: 479px) {
   /*ウィンドウ幅が最大479pxまでの場合に適用*/
-  .item-container > a {
+  .item-container > .item {
     flex-flow: column;
     padding: 20px 0px;
   }
