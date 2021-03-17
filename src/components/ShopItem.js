@@ -13,7 +13,7 @@ const ShopItem = (props) => {
   const onClickItem = () => {
     dispatch(
       setShopActions({
-        shopId: "KjaiGizi9vgI1oJJj8p94pDLKEt2", //変える
+        shopId: "D0QbQvp0iBPQYvWgr63BCy1Z4Cq1", //変える
         name: props.name,
         minPrice: props.minPrice,
         maxPrice: props.maxPrice,

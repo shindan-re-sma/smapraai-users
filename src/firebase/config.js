@@ -1,8 +1,8 @@
 export const firebaseConfig = {
-  apiKey: "AIzaSyB0BwVvue8Cd1AKERsmwF1o_o_FDDYSj6E",
-  authDomain: "smapra-demo.firebaseapp.com",
-  projectId: "smapra-demo",
-  storageBucket: "smapra-demo.appspot.com",
-  messagingSenderId: "865271731526",
-  appId: "1:865271731526:web:77c2cfff03afba0db48147",
+  apiKey: "AIzaSyDDTpo4EmLh39NuyHdStIKPuRSw8r6pX6w",
+  authDomain: "dev-smapraai-shops.firebaseapp.com",
+  projectId: "dev-smapraai-shops",
+  storageBucket: "dev-smapraai-shops.appspot.com",
+  messagingSenderId: "1088095161177",
+  appId: "1:1088095161177:web:72c5716ee4ace56d371a48",
 };
