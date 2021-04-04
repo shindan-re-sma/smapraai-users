@@ -20,8 +20,8 @@ const ShopItem = (props) => {
       })
     );
 
-    if (props.name === "イオシス") {
-      window.open("https://k-tai-iosys.com/");
+    if (props.link) {
+      window.open(props.link);
     } else {
       dispatch(push("/form"));
     }

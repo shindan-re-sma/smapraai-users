@@ -61,7 +61,6 @@ const Assesment = () => {
         },
       }
     );
-
     setShopList(data);
   };
 

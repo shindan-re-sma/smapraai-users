@@ -25,6 +25,7 @@ const ShopList = (props) => {
         shopId={props.items[key].shopId}
         name={props.items[key].trader_name}
         shopLabel={shopLabel}
+        link={props.items[key].link_url}
         description={props.items[key].description}
         minPrice={props.items[key].min_price}
         maxPrice={props.items[key].max_price}
